@@ -5,7 +5,7 @@ import joblib;
 
 app = Flask(__name__)
 
-@app.route("/", methods = ["POST", "GET"])
+@app.route("/", methods = ["POST"])
 def index():
     if request.method == "POST":
         weight = request.form["weight"]
